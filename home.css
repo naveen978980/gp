@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .cart {
+    font-size: 16px;
+  }
+  
+  .cart-icon {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
+  
+  .hero .buy-now {
+    background: #555;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .hero .buy-now a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Graphics Card Info Section */
+  .graphics-card-info {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Products Section */
+  .products {
+    padding: 20px;
+  }
+  
+  .products h2 {
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .product-card-1, .product-card-2, .product-card-3,
+  .product-card-4, .product-card-5 {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .product-card-1 h3, .product-card-2 h3, .product-card-3 h3,
+  .product-card-4 h3, .product-card-5 h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .product-card-1 p, .product-card-2 p, .product-card-3 p,
+  .product-card-4 p, .product-card-5 p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart {
+    background: #555;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .add-to-cart a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Footer Section */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .social-media {
+    margin: 10px 0;
+  }
+  
+  .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+  
+    .hamburger .line {
+      background: white;
+      height: 3px;
+      width: 25px;
+      margin: 3px 0;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+    }
+  
+    nav.active {
+      display: flex;
+    }
+  
+    .product-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
